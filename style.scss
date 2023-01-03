@@ -656,6 +656,11 @@ $text-color: #152536;
       justify-content: space-around;
       margin-bottom: 1.25rem;
     }
+    button{
+      background: none;
+      border:none;
+      color:white;
+    }
   }
   .modal-dialog {
     position: relative;
@@ -916,6 +921,10 @@ footer {
   justify-content: space-between;
   background: white;
   border-radius: 20px 20px 0 0;
+  button{
+    background-color: none;
+    border:none;
+  }
 }
 }
 

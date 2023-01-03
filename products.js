@@ -130,32 +130,6 @@ const products = async function renderProduct() {
 
 
     window.localStorage.setItem("card", JSON.stringify(card));
-    // card = JSON.parse(window.localStorage.getItem("card"));
-    // const data = {
-    //   id: Math.random(),
-    //   images: product.images,
-    //   name: product.name,
-    //   count: counter,
-    //   price: product.price,
-    //   size: size,
-    //   color: color,
-    // };
-
-    // fetch(`http://localhost:3000/activeOrder`, {
-    //   method: "POST", // or 'PUT'
-    //   headers: {
-    //     Accept: "application/json",
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(data),
-    // })
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     console.log("Success:", data);
-    //   })
-    //   .catch((error) => {
-    //     console.log("Error:", error);
-    //   });
   });
   };
 

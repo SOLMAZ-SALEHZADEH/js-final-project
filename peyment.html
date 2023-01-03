@@ -21,7 +21,8 @@
   <body>
     <div class="shipping-address">
       <header class="d-flex mb-4 align-items-baseline">
-        <svg
+        <a href="./checkout.html">
+          <svg
           width="17"
           height="15"
           viewBox="0 0 17 15"
@@ -35,6 +36,7 @@
             fill="black"
           />
         </svg>
+        </a>
         <p>payment method</p>
       </header>
       <div class="card align-items-center">
@@ -120,11 +122,15 @@
       </div>
       <div class="padding-bottom-150"></div>
       <footer class="fixed-bottom">
-        <div class="description-info d-flex justify-content-between">
+        <div 
+        id="saveOrder"
+        class="description-info d-flex justify-content-between" 
+        data-id="116" title="DELETE" class="btn btn-sm m-1 text-white" data-bs-toggle="modal" data-bs-target="#deleteModal"
+        >
           <div class="d-flex addButton align-center">
-            <button data-id="116" title="DELETE" class="btn btn-sm m-1 text-white" data-bs-toggle="modal" data-bs-target="#deleteModal">
+            <!-- <button data-id="116" title="DELETE" class="btn btn-sm m-1 text-white" data-bs-toggle="modal" data-bs-target="#deleteModal"> -->
               <p class="px-2">Confirm payment</p>
-              </button>
+              <!-- </button> -->
            
           </div>
         </div>
@@ -139,7 +145,7 @@
             <p>you have successfully made order!</p>
           </div>
           <div class="modal-body">
-              <button class="viwe-order">view order</button>
+              <button class="viwe-order" onclick="window.location.href='./orders.html'">view order</button>
               <button class="view-E-receipt">view E-receipt</button>
 
           </div>
@@ -158,5 +164,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="./peyment.js" type="module"></script>
   </body>
 </html>
