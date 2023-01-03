@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="products__container">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./images/companies/products/Rectangle 6.png"
+              class="d-block w-75 m-auto"
+              alt="..."
+              id="productImg"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/companies/products/Rectangle 6.png"
+              class="d-block w-75 m-auto"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/companies/products/Rectangle 6.png"
+              class="d-block w-75 m-auto"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="description">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="mb-0 font-weight-bold title" id="title">Running Sportwear</p>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            id="wishlist"
+          >
+            <g clip-path="url(#clip0_33_9721)">
+              <path
+                d="M12 4.12207L10.9245 3.01657C8.39996 0.421573 3.77096 1.31707 2.09996 4.57957C1.31546 6.11407 1.13846 8.32957 2.57096 11.1571C3.95096 13.8796 6.82196 17.1406 12 20.6926C17.178 17.1406 20.0475 13.8796 21.429 11.1571C22.8615 8.32807 22.686 6.11407 21.9 4.57957C20.229 1.31707 15.6 0.420073 13.0755 3.01507L12 4.12207ZM12 22.5001C-10.9995 7.30207 4.91846 -4.55993 11.736 1.71457C11.826 1.79707 11.9145 1.88257 12 1.97107C12.0846 1.88265 12.1727 1.79759 12.264 1.71607C19.08 -4.56293 34.9995 7.30057 12 22.5001Z"
+                fill="#212529"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_33_9721">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="sold" id="sold">5.371 sold</div>
+          <!-- <img src=""  class="star" alt="star"> -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-star-half mx-1"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"
+            />
+          </svg>
+          <p id="rate">4.3</p>
+          <p>(<span id="reviews"></span> reviwes)</p>
+        </div>
+      </div>
+      <div class="description-info">
+        <p class="title">Description</p>
+        <p id="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste.
+          Deserunt quis quaerat nemo! Autem.
+        </p>
+        <div class="d-flex justify-content-between mt-3">
+          <div>
+            <p class="title">Size</p>
+            <div class="d-flex" id="size">
+              <span class="size-options mr-1 active">40</span>
+              <span class="size-options">41</span>
+              <span class="size-options">42</span>
+            </div>
+          </div>
+          <div>
+            <p class="title">Color</p>
+            <div class="d-flex" id="color">
+              <div class="color-options pink active"></div>
+              <div class="color-options purple"></div>
+              <div class="color-options blue"></div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3 d-flex align-items-center">
+          <p class="title mx-2">Quantity</p>
+          <div class="ml-5 quantity-counter">
+            <span id="mines">-</span> <span id="count"></span><span id="plus">+</span>
+          </div>
+        </div>
+      </div>
+      <div class="description-info d-flex justify-content-between">
+        <div>
+          <p>Total price</p>
+          <h4 class="fw-bold" id="totalPrice"></h4>
+        </div>
+        <button class="d-flex addButton align-center disabled" type="button" id="addToCard">
+          <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+          <p class="px-2" >Add to Cart</p>
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./products.js" type="module"></script>
+  </body>
+</html>
